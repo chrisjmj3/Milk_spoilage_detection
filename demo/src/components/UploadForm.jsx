@@ -142,7 +142,7 @@ function UploadForm() {
     formData.append("image", document.getElementById("file-upload").files[0]);
 
     try {
-        const response = await fetch("/api/upload", {
+        const response = await fetch("https://milk-spoilage-detection.onrender.com/api/upload", {
             method: "POST",
             body: formData,
         });
